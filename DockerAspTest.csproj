@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="0.17.1754972" />
+    <PackageReference Include="Spreads.LMDB" Version="1.0.0-build1807011414" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Amazon.ECS.Tools" Version="1.1.5" />
+  </ItemGroup>
+</Project>
+
