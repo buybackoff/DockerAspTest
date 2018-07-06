@@ -11,13 +11,13 @@
     "task-definition-task-role"    : "arn:aws:iam::914205952000:role/ecsTaskExecutionRole",
     "container-name"               : "DockerAspTest",
     "container-memory-hard-limit"  : 1000,
-    "container-port-mapping"       : "",
+    "container-port-mapping"       : "80:80",
     "container-environment-variables" : "\"ASPNETCORE_ENVIRONMENT\"=\"Production\"",
     "skip-image-push"                 : false,
     "cluster-service"                 : "DockerAspTest",
-    "desired-count"                   : 2,
+    "desired-count"                   : 1,
     "deployment-minimum-healthy-percent" : 50,
     "deployment-maximum-percent"         : 200,
     "placement-strategy"                 : "spread=attribute:ecs.availability-zone,spread=instanceId",
-    "vstoolkit-deployment-mode"          : "DeployService"
+    "vstoolkit-deployment-mode"          : "PushOnly"
 }
